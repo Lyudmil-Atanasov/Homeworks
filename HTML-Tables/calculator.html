@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <script>
+            function copyText(element)
+            {
+                var val = document.getElementById("input").value;
+                if((val.charAt(val.length-1)=="-" | val.charAt(val.length-1)=="+") | (val.charAt(val.length-1)=="*" | val.charAt(val.length-1)=="/") ){
+                    if((element == "-" | element == "+") | (element == "*"  | element == "/")){
+
+                    }else{
+                        document.getElementById("input").value=document.getElementById("input").value+element
+                    }
+                }else{
+                    document.getElementById("input").value=document.getElementById("input").value+element
+                }
+            }
+
+            function CE()
+            {
+                document.getElementById("input").value="";
+            }
+
+            function calc(){
+                var val = document.getElementById("input").value;
+                if((val.charAt(val.length-1)=="-" | val.charAt(val.length-1)=="+") || (val.charAt(val.length-1)=="*" | val.charAt(val.length-1)=="/") ){
+                       val=val.substring(0,val.length-1);
+                    document.getElementById("input").value=val;
+                }
+                document.getElementById("input").value=eval(document.getElementById("input").value);
+            }
+        </script>
+        <title>Calculator</title>
+        <style>
+            table td{
+                text-align: center;
+                height: 100px;
+                width: 100px;
+            }
+            #input{
+                width:98%;
+                height: 90%;
+                font-size: 45pt;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td colspan="4"><input id="input" type="text"></td>
+            </tr>
+            <tr>
+                <td onclick="copyText(1)">1</td>
+                <td onclick="copyText(2)">2</td>
+                <td onclick="copyText(3)">3</td>
+                <td onclick="copyText('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="copyText(4)">4</td>
+                <td onclick="copyText(5)">5</td>
+                <td onclick="copyText(6)">6</td>
+                <td onclick="copyText('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="copyText(7)">7</td>
+                <td onclick="copyText(8)">8</td>
+                <td onclick="copyText(9)">9</td>
+                <td onclick="copyText('*')">*</td>
+            </tr>
+            <tr>
+                <td onclick="CE()">C</td>
+                <td onclick="copyText(0)">0</td>
+                <td onclick="calc()">=</td>
+                <td onclick="copyText('/')">/</td>
+            </tr>
+        </table>
+    </body>
+</html>

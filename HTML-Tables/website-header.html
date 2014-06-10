@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Website Header</title>
+        <style>
+
+            select{
+                
+            }
+
+            .select{
+                background-color:transparent;
+                color: white;
+                font-size: 15px;
+                border: 0;
+                padding-top: 1px;
+                font-family:Sans-serif;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-indent: 1px;
+                text-overflow: "";
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-family:Sans-serif;
+            }
+            
+            table{
+                background-color: #234465;
+            }
+            #align{
+                text-align: right;
+                display: block;
+                color: white;
+            }
+            #img-align{
+                padding-left: 10px;
+         }
+
+            #user{
+                background-color: #234465;
+                color: white;
+                font-size: 15px;
+                border: 0;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-indent: 1px;
+                text-overflow: "";
+            }
+
+            #searchButton{
+                padding: 8px 10px;
+                width: 25px;
+                height: 25px;
+                background-color: white;
+                background-repeat:no-repeat;
+                background-position: 5px;
+                border: 0;
+                background-image:url('images/magn-glass-icon17.png');
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            #inputSearch{
+                width: 300px;
+                height: 23px;
+                border: 0;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+            table{
+                width: 100%;
+            }
+            
+            table td {
+                vertical-align: top;
+            }
+            
+            #inner-table td {
+                height: 40px;
+                width: 20%;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            #inner-table-2 td {
+                height: 40px;
+                width: 20%;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            #inner-table-2 td:hover {
+               background-color: orange;
+               border-radius: 10px;
+            }
+
+            #notification-icon {
+                padding-top: 3px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/download.png" width="350" alt="logo"></td>
+                    <td>
+                        <table id="inner-table">
+                            <tr>
+                                <td colspan="6">
+                                    <span id="align">0<span id="img-align"><img src="images/notificationsIcon.png" alt="bell" width="12" id ="notification-icon"></span>
+                                        <select id="user">
+                                            <option value="USER">USER &#9660;</option>
+                                            <option value="USER">USER</option>
+                                            <option value="USER">USER</option>
+                                            <option value="USER">USER</option>
+                                        </select>
+                                        <input id="inputSearch" type="text"><button type="submit" id="searchButton"></button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <table id="inner-table-2">
+                                <tr>
+                                    <td>
+                                        <a href="https://softuni.bg/news">NEWS</a>
+                                    </td>
+                                    <td>
+                                        <select class="select">
+                                            <option value="ABOUT THE UNIVERSITY">ABOUT THE UNIVERSITY &#9660;</option>
+                                            <option value="ABOUT THE UNIVERSITY">ABOUT THE UNIVERSITY</option>
+                                            <option value="ABOUT THE UNIVERSITY">ABOUT THE UNIVERSITY</option>
+                                            <option value="ABOUT THE UNIVERSITY">ABOUT THE UNIVERSITY</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="select">
+                                            <option value="TRAINING COURSES">TRAINING COURSES &#9660;</option>
+                                            <option value="TRAINING COURSES">TRAINING COURSES</option>
+                                            <option value="TRAINING COURSES">TRAINING COURSES</option>
+                                            <option value="TRAINING COURSES">TRAINING COURSES</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <a href="">FOR COMPANIES</a>
+                                    </td>
+                                    <td>
+                                        <a href="">FORUM</a>
+                                    </td>
+                                    <td>
+                                        <a href="">CONTACTS</a>
+                                    </td>
+
+                            </table>
+
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody></tbody>
+        </table>
+    </body>
+</html>
