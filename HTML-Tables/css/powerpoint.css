@@ -1,0 +1,39 @@
+body{
+	background-image: url("../images/Untitled.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1{
+	color :  #cc994b;  
+}
+
+h2{
+	color : #cfcfcf
+}
+
+.tags{
+	color: #ebc55e;
+}
+
+.inner-list{
+	margin-left : -3%;
+	color : #fcf6d4;
+	list-style-type: none;
+}
+
+ul{
+	list-style-type: square;
+	color :  #cc994b; 
+}
+
+#in-div{
+	margin-left : 5%;
+    background: none;
+}
+
+div{
+	width : 500px;
+	margin-left :  3%;
+    background-image: url("../images/U.png"); ;
+}
