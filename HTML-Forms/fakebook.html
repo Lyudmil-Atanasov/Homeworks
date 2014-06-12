@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Fakebook</title>
+        <style>
+            #container{
+                width: 1000px;
+                background-color: #3d5a99;
+                text-align: center;
+                height: 520px;
+            }
+            #header{
+                text-align: center;
+                color: white;
+                font-family: sans-serif;
+            }
+            #moto{
+                margin-top: -20px;
+            }
+            #non-important-info{
+                text-align: left;
+                margin-left:15px ;
+                border-radius: 5px;
+                float: left;
+            }
+            #label-birthday{
+                color: white;
+                margin-left: 1px;
+            }
+            fieldset{
+                width: 318px;
+                height: 200px;
+                padding-bottom: 80px;
+            }
+            .border{
+                margin-top: 2px;
+                border-radius: 5px;
+            }
+            .gender{
+                color: white;
+            }
+            #rad{
+                margin-top: 10px;
+            }
+            #btn-reset{
+                width: 347px;
+                margin-left: 2px;
+                height: 30px;
+                margin-top: 10px;
+            }
+            #imprtand-info{
+                float: left;
+                margin-left: 50px;
+            }
+            #fildset-important{
+                width: 470px;
+                height: 200px;
+                text-align: center;
+            }
+            #select-country{
+                width: 100px;
+            }
+            #city{
+                width: 170px;
+            }
+            #district{
+                width: 170px;
+            }
+            #street{
+                width: 100px;
+            }
+            #nr{
+                width: 70px;
+            }
+            #floor{
+                width: 70px;
+            }
+            #ap{
+                width: 70px;
+            }
+            #door-color-label{
+                margin-right: 380px;
+                color: white;
+            }
+            #door-color{
+                width: 176px;
+                margin-left: 4px;
+            }
+            #door-color-line{
+                margin-right: 122px;;
+            }
+            #more-info-lable{
+                margin-right: 294px;
+                margin-top: 10px;
+                color: white;
+            }
+            #more-info{
+                width: 450px;
+                height: 100px;
+            }
+
+            #submit-btn{
+                width: 500px;
+                margin-left: 2px;
+                height: 30px;
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+            .top-M{
+                margin-top: 4px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <img src="images/Capture.png"  alt="logo">
+            <div id="header">
+                <h1>Registration</h1>
+                <p id="moto">It is safe and will be always be! </p>
+            </div>
+            <div id="non-important-info">
+                 <form>
+                    <fieldset class="border">
+                     <input type="text" class="border" placeholder=" First name" name="first-name">
+                     <input type="text" class="border" placeholder=" Last name" name="last-name" ><br/>
+                     <input type="email" class="border" placeholder=" Email" name="email">
+                     <input type="tel" class="border" placeholder=" Phone number" name="email"><br/>
+                     <input type="password" class="border" placeholder=" Password" name="pass">
+                     <input type="text" class="border" placeholder=" Website" name="website" pattern="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"><br/>
+                     <label for="birthday" id="label-birthday">Birthday:</label><br/>
+                     <input type="date" name="birthday" value="2014-05-09" id="birthday" class="border"><br/>
+                     <div id="rad">
+                         <input type="radio" name="gender" id="fem">
+                         <label for="fem" class="gender">Female</label>
+                         <input type="radio" name="gender" id="m">
+                         <label for="m" class="gender">Male</label>
+                         <input type="radio" name="gender" id="other" >
+                         <label for="other" class="gender">Other</label>
+                     </div>
+                    </fieldset>
+                    <button type="reset" class="border" id="btn-reset">Clean Form</button>
+                 </form>
+            </div>
+
+            <div id="imprtand-info">
+                <form>
+                  <fieldset class="border" id="fildset-important">
+                    <select id="select-country" name="country">
+                        <option value="bg">Bulgaria</option>
+                        <option value="us">USA</option>
+                    </select>
+                    <input type="text" id="city" name= "city" placeholder=" City">
+                    <input type="text" id="district" name ="dist" placeholder="District"><br/>
+                    <span style="margin-right: 115px;">
+                        <input type="text" id="street" name= "street" placeholder=" Street" class="top-M">
+                        <input type="number" id="nr" name= "number-street" placeholder=" Nr">
+                        <input type="number" id="floor" name= "floor" placeholder=" Floor">
+                        <input type="number" id="ap" name= "apartment" placeholder=" Apartment">
+                    </span><br/>
+                    <label for="door-color" id="door-color-label" class="top-M">Door Color:</label><br/>
+                    <span id="door-color-line" class="top-M">
+                        <input type="color" value="#FFFFFF" id="door-color" name="door-color">
+                        <input type="number"  name="water-number" placeholder=" water meter">
+                        <select placeholder=" water meter">
+                            <option value="" disabled="disabled" selected >Pants Number</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </span><br/><br/>
+                    <label for="more-info" id="more-info-lable" class="top-M" >More personal information:</label><br/>
+                    <textarea id="more-info" class="top-M"></textarea>
+                  </fieldset>
+                    <button type="submit" id="submit-btn" >Register</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
