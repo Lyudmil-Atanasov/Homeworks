@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Apple's Laptops</title>
+        <style>
+            h1{
+                color:#21354C;
+            }
+
+            .btn-size{
+                box-sizing: border-box;
+                width: 250px;
+                background-color: white;
+                margin: 5px;
+                border-color: lightblue;
+                border-style: solid;
+            }
+
+            .btn-size:hover{
+                border-color: red;
+            }
+
+            .info {
+                display: inline-block;
+                text-align: left;
+            }
+
+            .name{
+                color: #21354C;
+                font-size: 24px;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+            .params{
+                color: #21354C;
+                font-size: 27px;
+                font-family: monospace;
+            }
+
+            .img-size{
+                width: 240px;
+                height: 150px;
+                margin-left: -5px;
+            }
+
+            .price{
+                background-size: 200px;
+                background-color: #21354C;
+                color:white;
+                float: right;
+                width: 110px;
+                height: 30px;
+                border-top-left-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                margin-right: -6px;
+            }
+            #products{
+                float: left;
+                margin-left: 10px;
+            }
+            #spinners{
+                border-color: lightblue;
+                border-style: solid;
+                float: right;
+                font-size: 20px;
+                margin-top: 5px;
+            }
+            .right-value{
+               float: right;
+             }
+            .left-value{
+                float: left;
+            }
+            input{
+                width: 250px;
+            }
+            legend{
+                text-align: center;
+            }
+            fieldset{
+                border-style: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Apple's Laptops (6)</h1>
+        <div id="products">
+            <button type="button" class="btn-size" onclick="window.open('http://www.goldentowns.com/?i=101290')">
+                 <span class="info"><span class="name">Apple MacBook Air</span><span class="params"><br/>11.6/1.3GHz<br/>Haswell</span></span>
+                 <img src="images/macbook-air-large-image.jpg" class="img-size" alt="product">
+                 <span class="price">$1.7290,00</span>
+            </button>
+            <button type="button" class="btn-size" onclick="window.open('http://www.goldentowns.com/?i=101290')">
+                <span class="info"><span class="name">Apple MacBook Air</span><span class="params"><br/>11.6/1.3GHz<br/>Haswell</span></span>
+                <img src="images/macbook-air-large-image.jpg" class="img-size" alt="product">
+                <span class="price">$1.7290,00</span>
+            </button>
+            <button type="button" class="btn-size" onclick="window.open('http://www.goldentowns.com/?i=101290')">
+                <span class="info"><span class="name">Apple MacBook Air</span><span class="params"><br/>11.6/1.3GHz<br/>Haswell</span></span>
+                <img src="images/macbook-air-large-image.jpg" class="img-size" alt="product">
+                <span class="price">$1.7290,00</span>
+            </button><br/>
+            <button type="button" class="btn-size" onclick="window.open('http://www.goldentowns.com/?i=101290')">
+                <span class="info"><span class="name">Apple MacBook Air</span><span class="params"><br/>11.6/1.3GHz<br/>Haswell</span></span>
+                <img src="images/macbook-air-large-image.jpg" class="img-size" alt="product">
+                <span class="price">$1.7290,00</span>
+            </button>
+            <button type="button" class="btn-size" onclick="window.open('http://www.goldentowns.com/?i=101290')">
+                <span class="info"><span class="name">Apple MacBook Air</span><span class="params"><br/>11.6/1.3GHz<br/>Haswell</span></span>
+                <img src="images/macbook-air-large-image.jpg" class="img-size" alt="product">
+                <span class="price">$1.7290,00</span>
+            </button>
+            <button type="button" class="btn-size" onclick="window.open('http://www.goldentowns.com/?i=101290')">
+                <span class="info"><span class="name">Apple MacBook Air</span><span class="params"><br/>11.6/1.3GHz<br/>Haswell</span></span>
+                <img src="images/macbook-air-large-image.jpg" class="img-size" alt="product">
+                <span class="price">$1.7290,00</span>
+            </button>
+        </div>
+        <div id="spinners">
+           <fieldset>
+               <legend>Price</legend>
+               <label class="left-value">1700</label>
+               <label class="right-value">2600</label><br/>
+               <input type="range">
+           </fieldset><br/>
+            <fieldset>
+                <legend>Ram</legend>
+                <label class="left-value">2048</label>
+                <label class="right-value">4096</label><br/>
+                <input type="range">
+            </fieldset><br/>
+            <fieldset>
+                <legend>Disc</legend>
+                <label class="left-value">100GB</label>
+                <label class="right-value">2000GB</label><br/>
+                <input type="range">
+            </fieldset><br/>
+            <fieldset>
+                <legend>Display</legend>
+                <label class="left-value">11.6</label>
+                <label class="right-value">18.4</label><br/>
+                <input type="range">
+            </fieldset><br/>
+            <fieldset>
+                <legend>Weight</legend>
+                <label class="left-value">1</label>
+                <label class="right-value">6</label><br/>
+                <input type="range">
+            </fieldset><br/>
+            <fieldset>
+                <legend>Warranty</legend>
+                <label class="left-value">12</label>
+                <label class="right-value">60</label><br/>
+                <input type="range">
+            </fieldset>
+        </div>
+    </body>
+</html>
