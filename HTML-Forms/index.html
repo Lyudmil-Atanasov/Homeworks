@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Flight Order</title>
+        <style>
+            form{
+                background-color: lightpink ;
+                width: 500px;
+            }
+            h1{
+                text-align: center;
+            }
+            #for{
+                margin-left: 10px;
+            }
+            #to{
+                margin-left: 250px;
+            }
+            #selectDeparture{
+                width: 160px;
+                margin-left: 10px;
+            }
+            #destination{
+                width: 160px;
+                margin-left: 116px;
+            }
+            #directs-box{
+                margin-left: 290px;
+            }
+            #date-leave{
+                margin-left: 10px;
+            }
+            #time-interval{
+                margin-left: 178px;
+            }
+            #input-date{
+                margin-left: 10px;
+                width: 160px;
+            }
+            #interval-1{
+                margin-left: 110px;
+                width: 70px;
+            }
+            #interval-2{
+                margin-left: 10px;
+                width: 70px;
+            }
+            #interval-1-return{
+                margin-left: 110px;
+                width: 70px;
+            }
+            #interval-2-return{
+                margin-left: 10px;
+                width: 70px;
+            }
+            #date-return{
+                margin-left: 10px;
+            }
+            #return{
+                width: 160px;
+                margin-left: 10px;
+            }
+            #time-interval-return{
+                margin-left: 200px;
+            }
+            #number1{
+                margin-left: 10px;
+            }
+            #number2{
+                margin-left: 32px;
+            }
+            #number3{
+                margin-left: 25px;
+            }
+            #number4{
+                margin-left: 133px;
+            }
+            #input-number1{
+                margin-left: 10px;
+                width: 41px;
+            }
+            #input-number2{
+                margin-left: 10px;
+                width: 41px;
+            }
+            #input-number3{
+                margin-left: 10px;
+                width: 41px;
+            }
+            #select-class{
+                margin-left: 112px;
+            }
+            #submit{
+                width: 166px;
+                margin-left: 288px;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="get">
+            <h1>FLIGHT ORDER</h1>
+            <label id="for" for="selectDeparture">For:</label>
+            <label id="to" for="destination">To:</label><br/>
+            <select id="selectDeparture" name="select-dep">
+                <option value="s">Sofia</option>
+                <option value="p">Plovdiv</option>
+                <option value="v">Varna</option>
+                <option value="b">Burgas</option>
+            </select>
+            <select id="destination" name="destination">
+                <option value="s">Sofia</option>
+                <option value="p">Plovdiv</option>
+                <option value="v">Varna</option>
+                <option value="b">Burgas</option>
+            </select><br/>
+            <input type="checkbox" id="directs-box" name="directs">
+            <label id="directs-lable" for="directs-box">Prefer Directs</label><br/>
+
+            <label id="date-leave" for="selectDeparture">Departure Date:</label>
+            <label id="time-interval" for="interval-1">Time interval:</label><br/>
+            <input type="date" id="input-date" name="date-leave">
+            <input type="time" id="interval-1" name="interval-leave-1">
+            <input type="time" id="interval-2" name="interval-leave-2"><br/>
+            <label id="date-return" for="return">Return Date:</label>
+            <label id="time-interval-return">Time interval:</label><br/>
+            <input type="date" id="return" name="date-return">
+            <input type="time" id="interval-1-return" name="interval-return-1">
+            <input type="time" id="interval-2-return" name="interval-return-2"><br/>
+            <label id="number1">12+</label>
+            <label id="number2">2-12</label>
+            <label id="number3">0-2</label>
+            <label id="number4">Choose class</label><br/>
+            <input type="number" id="input-number1" min="12" name="number1">
+            <input type="number" id="input-number2" min="2" max="12" name="number2">
+            <input type="number" id="input-number3" min="0" max="2" name="number3">
+            <select id="select-class" name="class">
+                <option value="e">Economy</option>
+                <option value="b">Business</option>
+            </select>
+            <button type="submit" id="submit">SEARCH</button>
+        </form>
+    </body>
+</html>
