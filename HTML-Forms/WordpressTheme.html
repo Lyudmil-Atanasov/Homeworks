@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <title>Wordpress Theme</title>
     <style>
-        h1{
-            box
+        #image-btn{
+            width: 30px;
+            height: 30px;
+            margin-top: 6px;
+            margin-left: 10px;
+        }
+        #serch-box{
+            margin-top: 10px;
+        }
+        div{
+            float: left;
         }
     </style>
 </head>
 
 <body>
-   <img src="images/Untitled-1.png"><br/>
+   <img src="images/Untitled1.png"><br/>
+   <form>
    <label for="upload">Choose a theme</label>
-   <input type="file" id="upload"><br/>
-   <label>Or search in wordpress</label>
-   <input type="search">
+   <input type="file" id="upload" name="file"><br/>
+   <div>
+       <label>Or search in wordpress</label>
+       <input type="search" id="serch-box" name="search">
+   </div>
+   <input type="image" src="images/Untitled.png" id="image-btn" alt="submit button">
+   </form>
 </body>
 </html>
