@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>BGJUG - Bulgarian java User Group</title>
+        <style>
+
+
+            header{
+                margin-top: 30px;
+            }
+            #logo{
+                display: inline-block;
+                width: 128px;
+            }
+            #rss-icon{
+                display: inline-block;
+                width:20px;
+                height: 20px;
+                float: right;
+                margin-top: 75px;
+            }
+            h1{
+               text-align: left;
+               margin-left: 10px;
+               font-family: serif;
+            }
+            .navigations{
+                text-decoration: none;
+                color: lightgray;
+                display: inline-block;
+                width:150px;
+                margin-left: 10px;
+                font-family: serif;
+            }
+            form{
+                display: inline-block;
+                float: right;
+            }
+            #searchbox{
+                box-sizing: border-box;
+                width:200px;
+                height: 27px;
+            }
+            #recent-posts{
+                float: left;
+                width: 25%;
+            }
+            h5{
+                text-align: left;
+                color: lightgray;
+                margin-bottom: -30px;
+                font-family: sans;
+            }
+            ul{
+                list-style-type: none;
+                margin-left: -30px;
+            }
+            li{
+                margin-top: 5px;
+            }
+            .asside-links{
+                text-decoration: none;
+                font-size: 20px;
+                font-family: sans;
+            }
+
+            section{
+                float: left;
+                margin-left: 10px;
+                width: 600px;
+            }
+            h2{
+               margin-top: 15px;
+               margin-bottom: -5px;
+            }
+            .date-div{
+                font-family: sans;
+                font-size: 13px;
+            }
+            .continue-reading{
+                font-family: sans;
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+            #additional-info{
+                float: left;
+                width:250px;
+                text-align: left;
+            }
+            #choose-language{
+                width: 100px;
+                margin-right: 150px;
+                box-sizing: border-box;
+                margin-bottom: 15px;
+            }
+
+            footer{
+                clear: both;
+                position: relative;
+                z-index: 10;
+                height: 100%;
+                margin-top: -3em;
+                background-color: black;
+            }
+
+            h3{
+                color: white;
+                width: 150px;
+                margin-left: 15px;
+                float:left;
+            }
+            #pages{
+                color:white;
+                font-family:serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="http://java-bg.org/?lang=en"><img id="logo" src="image/bgjug_logo.png" alt="logo"></a>
+            <a href="http://java-bg.org/feed/" id="rss"><img id="rss-icon" src="image/black-rss.png" alt="logo rss"></a>
+            <h1>BGJUG – Bulgarian Java User Group</h1><br/>
+            <nav>
+            <a href="#" class="navigations">ABOUT BGJUG</a>
+            <a href="#" class="navigations">EVENTS</a>
+            <a href="#" class="navigations">CONTACTS</a>
+            <form>
+                <input  id="searchbox" type="search" name="search" placeholder=" search">
+            </form>
+            </nav>
+            <hr/>
+        </header>
+
+        <aside id="recent-posts">
+            <h5>RECENT POSTS</h5><br/>
+            <hr/>
+            <ul>
+                <li>
+                    <a href="#" class="asside-links">Make Tests Fail</a>
+                </li>
+                <li>
+                    <a href="#" class="asside-links">An Architecture for E-Voting</a>
+                </li>
+                <li>
+                    <a href="#" class="asside-links">Integration Tests for External Services</a>
+                </li>
+                <li>
+                    <a href="#" class="asside-links">Algorithmic Music Influenced by Tweets</a>
+                </li>
+                <li>
+                    <a href="#" class="asside-links">The Low Quality of Scientific Code</a>
+                </li>
+            </ul>
+        </aside>
+        <section>
+            <article>
+                <h2>Make Tests Fail</h2>
+                <div class="date-div">by BOZHO on <time datetime="2014-06-12">JUNE 12, 2014</time> · LEAVE A COMMENT</div>
+                <p>This is about a simple testing technique that is probably obvious,
+but I’ll share it anyway. In case you are not following TDD,
+when writing tests, make them fail, in order to be sure you
+are testing the right thing. You can make them fail either by
+changing some preconditions (the “given” or “when” parts, […]<br/><br/>
+<a href="https://google.com" class="continue-reading">Continue Reading →</a>
+                </p>
+            </article>
+            <article>
+                <h2>An Architecture for E-Voting</h2>
+                <div class="date-div">by BOZHO on <time datetime="2014-05-27"> MAY 27, 2014</time> · LEAVE A COMMENT</div>
+                <p>E-voting is a hot topic in my country, and has been discussed
+a lot everywhere. Since we are already using the internet and
+touch-screen technologies in our everyday lives, why not apply
+that to voting? And not for the sake of technology itself, but
+in order to prevent technical mistakes and election fraud, and make […]<br/><br/>
+<a href="https://google.com" class="continue-reading">Continue Reading →</a>
+                </p>
+            </article>
+        </section>
+        <aside id="additional-info">
+            <h5>LANGUAGE / ЕЗИК</h5><br/>
+            <hr/>
+            <form>
+                <select id="choose-language">
+                    <option value="bg">Български</option>
+                    <option value="en">English</option>
+                </select>
+            </form><br/>
+            <h5>BLOGROLL</h5><br/>
+            <hr/>
+        </aside>
+        <footer>
+            <h3>BGJUG – Java Bulgarian User Group</h3>
+            <ul id="pages">
+                <li>Pages</li>
+                <li>About</li>
+                <li>Events</li>
+                <li>Contacts</li>
+            </ul>
+        </footer>
+    </body>
+</html>
