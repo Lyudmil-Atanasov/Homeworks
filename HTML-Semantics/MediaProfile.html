@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Kent's Media Profile</title>
+        <style>
+            body{
+                background-color: lightpink;
+            }
+            h1{
+                text-align: center;
+            }
+            article {
+                width: 350px;
+                height: 250px;
+                float: left;
+                margin-left: 50px;
+            }
+
+            figure{
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            h3{
+                margin-top: 0px;
+            }
+
+            meter{
+                width: 242px;
+            }
+
+            #audio-container {
+                width: 350px;
+                height: 135px;
+                background-color: black;
+            }
+            #inner-audio{
+                margin-top: 50px;
+                height: 31px;
+            }
+
+            audio{
+                width: 350px;
+                margin-top: 7px;
+                box-sizing: border-box;
+                height: 31px;
+            }
+
+            video{
+                width: 455px;
+                height: 256px;
+                box-sizing: border-box;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Profile</h1>
+        </header>
+        <section>
+            <article>
+                <figure>
+                    <figcaption><h3>User: Profile</h3></figcaption>
+                    <img src="image/capture.png">
+                </figure>
+                <div>Profile comleted 60%</div>
+                <meter value="0.6"/>
+            </article>
+            <article>
+                <figure>
+                        <figcaption><h3>Uploaded Audio Files</h3></figcaption>
+                        <div id="audio-container">
+                        <audio id="inner-audio" controls src="http://lyudmil-atanasov.free.bg/donkey_braying.mp3" type="audio/mp3"></audio>
+                    </div>
+                    <audio controls loop>
+                        <source  src="http://lyudmil-atanasov.free.bg/donkey_braying.mp3" type="audio/mp3">
+                        <source  src="http://lyudmil-atanasov.free.bg/donkey_braying.mp3" type="audio/mp3">
+                    </audio>
+                    <audio controls src="http://lyudmil-atanasov.free.bg/donkey_braying.mp3" type="audio/mp3" ></audio>
+                    <audio controls src="http://lyudmil-atanasov.free.bg/donkey_braying.mp3" type="audio/mp3" ></audio>
+                    <audio autoplay src="http://lyudmil-atanasov.free.bg/donkey_braying.mp3" type="audio/mp3" ></audio>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <figcaption><h3>Uploaded Video Files</h3></figcaption>
+                    <video controls poster="image/capture.png">
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+            </article>
+        </section>
+    </body>
+</html>
