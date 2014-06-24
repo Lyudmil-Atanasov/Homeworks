@@ -15,19 +15,26 @@
               font-weight: bold;
           }
         section article{
-            width:350px;
-            background-color: RGBA(255, 355, 355, 0.6);
+            width: 60%;
+            background-color: RGBA(255, 355, 355, 0.8);
             margin-top: 10px;
             border-radius: 10px;
+            padding-top: 5px;
+            padding-bottom: 10px;;
         }
 
         section article header{
             background-image: none;
             color: #ffffff;
-            font-size: 15pt;
             text-align: left;
             padding-left: 10px;
             border-radius: 5px;
+            line-height: 50px;
+            font-size: 25px;
+            width:95%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
         }
 
         #webColors{
@@ -48,6 +55,33 @@
         }
         #\#HSLHSV{
             background-color: blue;
+        }
+
+        section article div, footer{
+            margin-left: 20px;
+        }
+        section article div::first-letter{
+            font-size: 60px;
+            color: #000000;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+        section article span[lang=la]{
+            color:blue;
+            font-style: italic;
+        }
+        section article span{
+            display: block;
+            margin-left: 20px;
+            font-style: italic;
+        }
+        section article span[lang=la]:before{
+            content:"*";
+            letter-spacing:-4px
+
+        }
+        section article a{
+            color:grey;
         }
     </style>
 <body>
