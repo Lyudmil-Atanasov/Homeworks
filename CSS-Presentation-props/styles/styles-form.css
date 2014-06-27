@@ -1,0 +1,99 @@
+body{
+    font-size: 1rem;
+}
+.form{
+    width:500px;
+    height: 1000px;
+    background-color: green;
+    background-image: url('../images/formBackground.jpg');
+    background-position: top left;
+}
+
+.form label span{
+    display: block;
+    font-size: 2rem;
+    color:white;
+    margin-left: 25px;
+}
+.form label label[for="name"] span,
+    .form label label[for="email"] span,
+        .form label label[for="phone"] span,
+            .form label label[for="postcode"] span,
+                .form label label[for="country"] span,
+                    .form label label[for="cardN"] span,
+                        .form label label[for="sCode"] span,
+                            .form label label[for="cardName"] span,
+                                .form label label[for="card"] span{
+     width: 85px;
+     text-overflow: ellipsis;
+     font-size: 15px;
+     color:#000000;
+     display: inline-block;
+     line-height: 65px;
+     margin-right: 55px;
+     margin-left: 10px;
+ }
+.form label label[for="adress"]{
+    height:150px;
+}
+.form label label[for="adress"] span{
+    width: 68px;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color:#000000;
+    display: inline-block;
+    line-height: 1px;
+    margin-right: 55px;
+    margin-left: 10px;
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+.form label label{
+    width: 450px;
+    height:65px;
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    border-radius: 5px;
+    margin-top: 3px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.form label label input#name,
+    .form label label input#phone,
+        .form label label input#email,
+            .form label label input#postcode,
+                .form label label input#country {
+    width: 255px;
+    height: 25px;
+}
+
+.form label label textarea#adress{
+    width: 255px;
+    height: 130px;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+input[type="submit"]{
+    width: 124px;
+    height: 46px;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: darkblue;
+    border-style: none;
+    margin-top: 42px;
+    margin-left: 185px;
+    font-size: 19pt;
+}
+
+.form label label.sprite{
+    display: inline-block;
+    width: 45px;
+    height: 28px;
+    margin-top: -7px;
+    background: url('../images/credit-card-sprite.gif') 0px -4px;
+}

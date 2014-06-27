@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles-form.css">
+
+</head>
+<body>
+<form method="get" class="form">
+    <label><span>Step 1: Your details</span>
+        <label for="name">
+            <span>Name</span>
+            <input type="text" name="name" id="name"/>
+        </label>
+        <label for="email">
+            <span>Email</span>
+            <input type="email" name="email" id="email"/>
+        </label>
+        <label for="phone">
+            <span>Phone</span>
+            <input type="tel" name="phone" id="phone"/>
+        </label>
+    </label>
+    <label><span>Step 1: Delivery Adress</span>
+        <label for="adress">
+            <span>Adress</span>
+            <textarea rols="4" cols="4" id="adress"></textarea>
+        </label>
+        <label for="postcode">
+            <span>Post&#32;code</span>
+            <input type="number" name="postcode" id="postcode"/>
+        </label>
+        <label for="country">
+            <span>Country</span>
+            <input type="text" name="country" id="country"/>
+        </label>
+    </label>
+    <label><span>Step 1: Card details</span>
+        <label for="card">
+            <span>Card type</span>
+            <input type="radio" name="card" value="visa" id="card">
+            <input type="radio" name="card" value="amex" >
+            <input type="radio" name="card" value="master">
+        </label>
+        <label for="cardN">
+            <span>Card&#32;number</span>
+            <input type="number" name="cardN" id="cardN"/>
+        </label>
+        <label for="sCode">
+            <span>Security code</span>
+            <input type="text" name="sCode" id="sCode"/>
+        </label>
+        <label for="cardName">
+            <span>Name on card</span>
+            <input type="number" name="cardName" id="cardName"/>
+        </label>
+    </label>
+    <input type="submit" value="BUY IT!">
+</form>
+</body>
+</html>
