@@ -1,0 +1,1 @@
+window.alert("<h1>Sofia</h1>");
