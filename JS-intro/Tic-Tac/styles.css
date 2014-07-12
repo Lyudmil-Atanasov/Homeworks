@@ -1,0 +1,56 @@
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#playground{
+    width: 450px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+}
+ td {
+     width: 450px;
+     border: 5px solid black;
+}
+.col_1{
+     border-left: none;
+ }
+.col_3{
+    border-right: none;
+}
+.row_1{
+    border-top: none;
+}
+.row_3{
+    border-bottom: none;
+}
+.zero{
+    background-image: url("tic-tac-toe-hi.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 320px 140px;
+}
+.x {
+    background-image: url("tic-tac-toe-hi.png");
+    background-position: -165px 10px;
+    background-repeat: no-repeat;
+    background-size: 320px 140px;
+}
+
+.overlayOn {
+    background-color: rgba(1, 1, 1, 0.7);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}

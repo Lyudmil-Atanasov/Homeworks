@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="tic-tac.js"></script>
+    <meta charset="UTF-8">
+    <title>TicTac</title>
+</head>
+<body>
+    <header><h1>TIC TAC TOE</h1></header>
+    <section>
+    <div id="overlay"></div>
+    <div id="playground" >
+        <table>
+            <tbody>
+                <tr>
+                    <td  class="col_1 row_1" onclick="clickTd(0)"></td>
+                    <td  class="col_1 row_1" onclick="clickTd(1)"></td>
+                    <td  class="col_3 row_1" onclick="clickTd(2)"></td>
+                </tr>
+                <tr>
+                    <td class="col_1" onclick="clickTd(3)"></td>
+                    <td onclick="clickTd(4)"></td>
+                    <td class="col_3" onclick="clickTd(5)"></td>
+                </tr>
+                <tr>
+                    <td  class="col_1 row_3" onclick="clickTd(6)"></td>
+                    <td  class="col_2 row_3" onclick="clickTd(7)"></td>
+                    <td  class="col_3 row_3" onclick="clickTd(8)"></td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            var tds = document.getElementsByTagName('td');
+            for(var i=0; i<tds.length; i++){
+                tds[i].setAttribute('id',i);
+            }
+        </script>
+    </div>
+    </section>
+</body>
+</html>
