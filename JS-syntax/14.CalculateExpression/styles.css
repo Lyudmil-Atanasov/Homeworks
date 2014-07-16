@@ -1,0 +1,27 @@
+textarea{
+    padding-left: 10px ;
+    color: orange;
+    background-color: #234465;
+    display: block;
+    width: 30%;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+button{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: block;
+}
+p{
+    color: orange;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 60px;
+    background-color: #234465;
+    padding-left: 10px;
+}
