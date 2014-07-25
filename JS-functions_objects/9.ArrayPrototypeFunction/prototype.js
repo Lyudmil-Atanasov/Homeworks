@@ -24,6 +24,11 @@ Array.prototype.clean = function(deleteValue) {
 };
 
 
+String.prototype.replaceAll = function(target, replacement) {
+    return this.split(target).join(replacement);
+};
+
+
 arr=['hi','hi','hi','hello','buy'];
 console.log(arr.removeItem('hi'));
 arr=[1, 2, 1, 4, 1, 3, 4, 1, 111, 3, 2, 1, '1'];
